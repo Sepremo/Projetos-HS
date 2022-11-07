@@ -1,0 +1,138 @@
+html {
+    /* YOUTUBE DARK THEME VARIABLES */
+    /* https://www.color-hex.com/color-palette/99157 */
+    --tube0: #111;
+    --tube1: #212121;
+    --tube2: #3d3d3d;
+    --tube3: #ffffff;
+    --tube4: #aaaaaa;
+}
+
+body {
+    margin: 0;
+    background-color: -var(--tube0);
+    color: var(--tube1);
+    font-family: "Varela Round", sans-serif;
+}
+
+header {
+    background-color: var(--tube0);
+    padding: 1rem 0;   
+}
+
+nav {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+
+nav img {
+    width: auto;
+}
+
+nav img[src="./3bars.png"] {
+    height: 2rem;
+}
+
+nav div {
+    margin: 0 0.5rem;
+}
+
+a {
+    color: var(--tube3);
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--tube0);
+    margin: auto;
+    display: flex;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 5rem;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 6rem;
+    /* Stay at the top */
+    left: 0;
+    background-color: var(--tube0);
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 1rem;
+}
+
+/* The navigation menu links */
+.sidenav img {
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+
+}
+
+.videos {
+    margin-left: 5rem;
+    align-items: center;
+}
+
+.videoLine{
+    display: flex;
+
+}
+
+.video {
+    margin: 2rem 0.1rem;
+    width: 35%;
+    padding: 0px 10px;
+}
+
+.video img {
+    max-width: 100%;
+}
+
+.videoInfo {
+    display: flex;
+    align-items: start;
+    margin: 0.5rem;
+}
+
+.videoInfo img {
+    margin-right: 1rem;
+
+}
+
+.videoInfo .videoText {
+    margin: 0;   
+}
+
+.videoInfo .title {
+    margin: 0;
+    color: var(--tube3);
+}
+
+.videoInfo .youtuber {
+    margin: 0;
+    color: var(--tube4);
+}
+.videoInfo .viewsDate {
+    margin: 0;
+    color: var(--tube4);
+}
+
+.minorText {
+    margin: 0.5rem 0;
+}
